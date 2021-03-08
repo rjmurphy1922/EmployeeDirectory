@@ -1,15 +1,17 @@
 import React from 'react'
 import Header from "./components/Header";
 import Body from "./components/Body";
+import Search from "./components/Search";
+
 
 class App extends React.Component {
 
   state = {
     users: [
    
-   {
-     "results": [
-     {
+  //  {
+  //    "results": [
+{
      "gender": "female",
      "name": {
      "title": "Mrs",
@@ -63,24 +65,29 @@ class App extends React.Component {
      "medium": "https://randomuser.me/api/portraits/med/women/58.jpg",
      "thumbnail": "https://randomuser.me/api/portraits/thumb/women/58.jpg"
      },
-     "nat": "GB"
-     }
-     ],
+    //  "nat": "GB"
+     
+     
      "info": {
      "seed": "8861747a78980586",
      "results": 1,
      "page": 1,
      "version": "1.3"
+     }
    }
-   }
-  ]
-}
+    ]}
+
+
+
+
 
 render(){
   return (
     <div className="container">
         <Header />
-        <Body {this.state.users} />
+        <Search />
+        <Body users = {this.state.users} />
+       
     </div>
   );
 
