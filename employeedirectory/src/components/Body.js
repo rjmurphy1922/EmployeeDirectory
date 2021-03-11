@@ -1,23 +1,20 @@
+import Container from "./components/Container"
 
 function Body({users}){
     return(
 
-<div class="card" style={{width: "18rem;"}}>
+
+<div class="card" style={{width: 200}}>
   <img src="..." class="card-img-top" alt="..."></img>
-  <div class="card-body"></div>
-    {users.map(users => <p class="card-text">
-        {users.name.first} 
-        {users.name.last}
-        {users.name.picture}
-        </p> )}
-</div>
-  
-
-  
-  );
-    }
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <h2>{this.state.users.name}</h2> 
+    {/* <a href="#" class="btn btn-primary">Go somewhere</a> */}
+  </div></div>
 
 
+    )
+}
     
     
     export default Body;

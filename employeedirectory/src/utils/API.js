@@ -3,7 +3,7 @@ const BASEURL = "https://randomuser.me/api/";
 
 const API = {
 
-  search: function(numberUsers) {
+  searchEmployees: function(numberUsers) {
     return axios.get(BASEURL + `?results=${numberUsers}`);
   
   }
