@@ -1,20 +1,34 @@
-import Container from "./components/Container"
+import React,{useEffect,useState}from 'react'
+import Container from "./Container"
+import API from "../utils/API"
 
-function Body({users}){
-    return(
-
-
-<div class="card" style={{width: 200}}>
-  <img src="..." class="card-img-top" alt="..."></img>
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <h2>{this.state.users.name}</h2> 
-    {/* <a href="#" class="btn btn-primary">Go somewhere</a> */}
-  </div></div>
+function Body(){
 
 
-    )
-}
-    
-    
-    export default Body;
+ 
+  let [employees, setEmployees] = useState({users:[],search: ""});
+ 
+ 
+   useEffect(() => {
+     API.searchEmployees(25).then(results => {
+       setEmployees({
+         users: results.data.results,
+       });
+     });
+   }, [employees])
+   console.log(employees.users)
+   let people = employees.users
+   return(
+   <div>
+      {people.map((person,key) =>(
+        <Container key={key} firstName={person.name.first} />
+      ) ) }
+   </div>)
+ }
+
+ export default Body
+
+
+
+
+

@@ -1,17 +1,21 @@
 import React from 'react'
+import Body from "./components/Body"
 import Container from "./components/Container"
 
 
 
-class App extends React.Component {
+
+ export default function App(){
+
   
-  render(){
+  
+
     return (
         <div>
-            <Container />
+            <Body />
           </div>
       )
-    }
+    
   }
   
-  export default App;
+
