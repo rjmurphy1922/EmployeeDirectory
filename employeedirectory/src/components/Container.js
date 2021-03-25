@@ -1,14 +1,15 @@
-import React,{useEffect,useState}from 'react'
-import Body from "./Body"
-// import API from "../utils/API"
+import React from 'react'
 
-function Container({key, firstName}){
+function Container({key, firstName, lastName, image}){
 
 return(
 
-  <div key={key}>
-       {firstName}
-      </div>
+  <li key={key}>
+       {`${firstName} ${lastName}`}
+       <img src ={image} alt = "image"/>
+      </li>
+      
+      
 )
 }
 

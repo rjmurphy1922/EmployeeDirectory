@@ -15,14 +15,18 @@ function Body(){
          users: results.data.results,
        });
      });
-   }, [employees])
+   }, [])
    console.log(employees.users)
    let people = employees.users
    return(
    <div>
-      {people.map((person,key) =>(
-        <Container key={key} firstName={person.name.first} />
-      ) ) }
+     <ul>
+      {people.map((person) =>(
+        <Container key={person.login.uuid} firstName={person.name.first} lastName={person.name.last} image={person.picture.large}/>
+      )
+       )
+        }
+      </ul>
    </div>)
  }
 
