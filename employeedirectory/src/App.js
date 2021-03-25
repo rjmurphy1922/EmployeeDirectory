@@ -11,9 +11,9 @@ import Container from "./components/Container"
   
 
     return (
-        <li>
+        <div>
             <Body />
-      </li>
+          </div>
       )
     
   }
