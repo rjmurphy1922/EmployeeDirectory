@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Container({key, firstName, lastName, image}){
+function Container({key, firstName, lastName, phoneNumber, age, image, }){
 
 return(
 
@@ -10,7 +10,9 @@ return(
       {/* <th scope="col">#</th> */}
       <th scope="col">First</th>
       <th scope="col">Last</th>
-      <th scope="col">Handle</th>
+      <th scope="col">Phone Number</th>
+      <th scope="col">Age</th>
+      <th scope="col">Photograph</th>
     </tr>
   </thead>
   <tbody>
@@ -18,7 +20,10 @@ return(
       {/* <th scope="row">1</th> */}
       <td key ={key}>{`${firstName}`}</td>
       <td key ={key}>{`${lastName}`}</td>
+      <td key ={key}>{`${phoneNumber}`}</td>
+      <td key ={key}>{`${age}`}</td>
       <td><img src ={image} alt = "image"/></td>
+      
     </tr>
     {/* <tr>
       <th scope="row">2</th>

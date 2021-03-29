@@ -22,7 +22,7 @@ function Body(){
    <div>
      <ul>
       {people.map((person) =>(
-        <Container key={person.login.uuid} firstName={person.name.first} lastName={person.name.last} image={person.picture.large}/>
+        <Container key={person.login.uuid} firstName={person.name.first} lastName={person.name.last} phoneNumber = {person.phone} age  = {person.dob.age} image={person.picture.large}/>
       )
        )
         }
