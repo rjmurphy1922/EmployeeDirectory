@@ -1,6 +1,7 @@
 import React from 'react'
 import Body from "./components/Body"
-import Container from "./components/Container"
+// import Container from "./components/Container"
+import Filter from "./components/Filter"
 
 
 
@@ -12,6 +13,7 @@ import Container from "./components/Container"
 
     return (
         <div>
+            <Filter />
             <Body />
           </div>
       )
