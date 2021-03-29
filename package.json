@@ -1,12 +1,12 @@
 {
-  "homepage": "https://rjmurphy1922.herokuapp.com",
   "name": "employeedirectory",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.8.1",
+    "package-lock.json": "^1.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.3",
@@ -37,7 +37,7 @@
     ]
   },
   "engines": {
-    "node": "10.0.0",
-    "npm": "6.0.0"
+    "node": "14.5.1",
+    "npm": "6.14.8"
   }
 }
