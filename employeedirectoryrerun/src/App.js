@@ -1,7 +1,7 @@
-import React from 'react'
+import React from "react"
 import Body from "./components/Body"
 // import Container from "./components/Container"
-import Filter from "./components/Filter"
+import Search from "./components/Search"
 
 
 
@@ -13,11 +13,10 @@ import Filter from "./components/Filter"
 
     return (
         <div>
-            <Filter />
+            <Search />
             <Body />
           </div>
       )
     
-  }
-  
+    }
 

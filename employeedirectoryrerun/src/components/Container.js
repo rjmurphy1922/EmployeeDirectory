@@ -1,4 +1,5 @@
-import React from 'react'
+import React from "react"
+import bootstrap from 'bootstrap/dist/css/bootstrap.min.css'
 
 function Container({key, firstName, lastName, phoneNumber, age, image, }){
 
@@ -47,14 +48,3 @@ return(
 
 
   export default Container
-
-
-
-  //   <li key={key}>
-//        {`${firstName} ${lastName}`}
-//        <img src ={image} alt = "image"/>
-//       </li>
-      
-      
-// )
-// }
